@@ -1,0 +1,235 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*  Syntax Quick Reference
+  --------------------------
+  column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
+  span($ratio: 1, $offset: 0)
+  shift($ratios: 0, $col_or_span: column, $gutter: $jeet-gutter)
+  unshift()
+  edit()
+  center($max_width: 1410px, $pad: 0)
+  stack($pad: 0, $align: false)
+  unstack()
+  align($direction: both)
+  cf()
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "Klinic";
+  src: url('../fonts/../fonts/klinicslabbold-webfont.woff') format('woff');
+}
+
+html {
+  height: 101%;
+}
+
+#page {
+  *zoom: 1;
+  width: auto;
+  max-width: 1000px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  height: 100%;
+}
+#page:before, #page:after {
+  content: '';
+  display: table;
+}
+#page:after {
+  clear: both;
+}
+
+header {
+  padding: 80px 0;
+}
+
+h1 {
+  font-family: Klinic;
+  font-size: 36px;
+  word-spacing: 6px;
+  letter-spacing: 1px;
+  float: left;
+}
+
+nav {
+  font-family: Klinic;
+  font-size: 36px;
+  text-align: right;
+}
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+nav a:hover {
+  text-decoration: none;
+  color: #ddd;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  float: left;
+}
+
+.full-width {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: inherit;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: 0%;
+  height: 500px;
+  float: left;
+}
+.full-width:before, .full-width:after {
+  content: '';
+  display: table;
+}
+.full-width:after {
+  clear: both;
+}
+
+.half-width {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: inherit;
+  width: 25%;
+  margin-left: 0%;
+  margin-right: 0%;
+  height: 500px;
+  float: left;
+}
+.half-width:before, .half-width:after {
+  content: '';
+  display: table;
+}
+.half-width:after {
+  clear: both;
+}
+
+.quarter-width {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: inherit;
+  width: 25%;
+  margin-left: 0%;
+  margin-right: 0%;
+  height: 250px;
+}
+.quarter-width:before, .quarter-width:after {
+  content: '';
+  display: table;
+}
+.quarter-width:after {
+  clear: both;
+}
+
+#C {
+  background-color: #00a9ff;
+  font-family: Klinic;
+  color: white;
+  text-align: center;
+  font-size: 450px;
+}
+
+#M {
+  background: #ff0c3e;
+  font-family: Klinic;
+  color: white;
+  text-align: center;
+  font-size: 450px;
+}
+
+#Y {
+  background: #fde338;
+  font-family: Klinic;
+  color: white;
+  text-align: center;
+  font-size: 250px;
+}
+
+#K {
+  background: #0e1752;
+  font-family: Klinic;
+  color: white;
+  text-align: center;
+  font-size: 250px;
+}
+
+footer {
+  padding: 80px 0;
+  font-family: Klinic;
+  text-align: center;
+  clear: both;
+}

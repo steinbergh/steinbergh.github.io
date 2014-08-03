@@ -1,0 +1,118 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "../jeet/index";
+@import "compass/reset";
+@import "variables";
+@import "breakpoint";
+@import "compass";
+@import "compass/css3";
+
+
+@include font-face(Klinic, font-files("../fonts/klinicslabbold-webfont.woff"));
+
+html {
+	height: 101%;
+}
+
+#page {
+	@include center(1000px);
+	height: 100%;
+}
+
+header{
+	padding: 80px 0;
+}
+
+h1 {
+		font-family: Klinic;
+		font-size: 36px;
+		word-spacing: 6px;
+		letter-spacing: 1px;
+		float: left;
+}
+
+nav {
+	font-family: Klinic;
+	font-size: 36px;
+	text-align: right;
+	a {
+		text-decoration: none;
+		color: #000;
+		&:hover {
+			text-decoration: none;
+			color: #ddd;
+		}
+	}
+}
+
+.wrapper {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	float: left;
+}
+
+.full-width {
+  @include span(1/2);
+  height: 500px;
+  float: left;
+}
+
+.half-width {
+	@include span(1/4);
+	height: 500px;
+	float: left;
+}
+
+.quarter-width {
+	@include span(1/4);
+	height: 250px;
+}
+
+
+#C {
+	background-color: #00a9ff;
+	font-family: Klinic;
+	color: white;
+	text-align: center;
+	font-size: 450px;
+}
+
+#M {
+	background: #ff0c3e;
+	font-family: Klinic;
+	color: white;
+	text-align: center;
+	font-size: 450px;
+}
+
+#Y {
+	background: #fde338;
+	font-family: Klinic;
+	color: white;
+	text-align: center;
+	font-size: 250px;
+}
+
+#K {
+	background: #0e1752;
+	font-family: Klinic;
+	color: white;
+	text-align: center;
+	font-size: 250px;
+}
+
+footer {
+	padding: 80px 0;
+	font-family: Klinic;
+	text-align: center;
+	clear: both;
+}
+
+
+
+
+
