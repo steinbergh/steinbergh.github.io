@@ -10,7 +10,7 @@
 @import "compass";
 @import "compass/css3";
 
-
+// @include edit();
 @include font-face(Klinic, font-files("../fonts/klinicslabbold-webfont.woff"));
 
 html {
@@ -28,16 +28,17 @@ header{
 
 h1 {
 		font-family: Klinic;
-		font-size: 36px;
-		word-spacing: 6px;
+		font-size: 3em;
+		word-spacing: 0.5em;
 		letter-spacing: 1px;
 		float: left;
 }
 
 nav {
 	font-family: Klinic;
-	font-size: 36px;
+	font-size: 1.5em;
 	text-align: right;
+	word-spacing: 1em;
 	a {
 		text-decoration: none;
 		color: #000;
