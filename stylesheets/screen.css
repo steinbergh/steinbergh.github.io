@@ -84,7 +84,7 @@ html {
 #page {
   *zoom: 1;
   width: auto;
-  max-width: 1000px;
+  max-width: 75%;
   float: none;
   display: block;
   margin-right: auto;
