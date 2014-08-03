@@ -73,6 +73,12 @@ nav {
 	height: 250px;
 }
 
+#C, #M, #Y, #K {
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
 
 #C {
 	background-color: #00a9ff;
