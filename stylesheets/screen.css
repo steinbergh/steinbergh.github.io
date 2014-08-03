@@ -78,12 +78,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 html {
   height: 101%;
+  width: 100%;
 }
 
 #page {
   *zoom: 1;
   width: auto;
-  max-width: 1000px;
+  max-width: 75%;
   float: none;
   display: block;
   margin-right: auto;
@@ -129,6 +130,7 @@ nav a:hover {
 
 .wrapper {
   position: relative;
+  height: 100%;
   width: 100%;
   margin: 0 auto;
   float: left;
@@ -154,6 +156,27 @@ nav a:hover {
 .full-width:after {
   clear: both;
 }
+@media (max-width: 400px) {
+  .full-width {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    height: 400px;
+  }
+  .full-width:before, .full-width:after {
+    content: '';
+    display: table;
+  }
+  .full-width:after {
+    clear: both;
+  }
+}
 
 .half-width {
   *zoom: 1;
@@ -175,6 +198,27 @@ nav a:hover {
 .half-width:after {
   clear: both;
 }
+@media (max-width: 400px) {
+  .half-width {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: inherit;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: 0%;
+    height: 400px;
+  }
+  .half-width:before, .half-width:after {
+    content: '';
+    display: table;
+  }
+  .half-width:after {
+    clear: both;
+  }
+}
 
 .quarter-width {
   *zoom: 1;
@@ -195,7 +239,31 @@ nav a:hover {
 .quarter-width:after {
   clear: both;
 }
+@media (max-width: 400px) {
+  .quarter-width {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: inherit;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: 0%;
+    height: 200px;
+  }
+  .quarter-width:before, .quarter-width:after {
+    content: '';
+    display: table;
+  }
+  .quarter-width:after {
+    clear: both;
+  }
+}
 
+#C, #M, #Y, #K {
+  transition: opacity 0.15s linear;
+}
 #C:hover, #M:hover, #Y:hover, #K:hover {
   opacity: 0.7;
 }
@@ -207,29 +275,65 @@ nav a:hover {
   text-align: center;
   font-size: 450px;
 }
+@media (max-width: 400px) {
+  #C {
+    background-color: #00a9ff;
+    font-family: Klinic;
+    color: white;
+    text-align: center;
+    font-size: 350px;
+  }
+}
 
 #M {
-  background: #ff0c3e;
+  background-color: #ff0c3e;
   font-family: Klinic;
   color: white;
   text-align: center;
   font-size: 450px;
 }
+@media (max-width: 400px) {
+  #M {
+    background-color: #ff0c3e;
+    font-family: Klinic;
+    color: white;
+    text-align: center;
+    font-size: 350px;
+  }
+}
 
 #Y {
-  background: #fde338;
+  background-color: #fde338;
   font-family: Klinic;
   color: white;
   text-align: center;
   font-size: 250px;
 }
+@media (max-width: 400px) {
+  #Y {
+    background-color: #fde338;
+    font-family: Klinic;
+    color: white;
+    text-align: center;
+    font-size: 150px;
+  }
+}
 
 #K {
-  background: #0e1752;
+  background-color: #0e1752;
   font-family: Klinic;
   color: white;
   text-align: center;
   font-size: 250px;
+}
+@media (max-width: 400px) {
+  #K {
+    background-color: #0e1752;
+    font-family: Klinic;
+    color: white;
+    text-align: center;
+    font-size: 150px;
+  }
 }
 
 footer {
@@ -237,4 +341,9 @@ footer {
   font-family: Klinic;
   text-align: center;
   clear: both;
+}
+@media (max-width: 400px) {
+  footer {
+    padding: 60px;
+  }
 }
