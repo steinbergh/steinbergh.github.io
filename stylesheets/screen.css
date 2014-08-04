@@ -134,6 +134,7 @@ nav a:hover {
   width: 100%;
   margin: 0 auto;
   float: left;
+  overflow: hidden;
 }
 
 .full-width {
