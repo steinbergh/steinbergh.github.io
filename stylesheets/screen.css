@@ -100,9 +100,34 @@ html {
 #page:after {
   clear: both;
 }
+@media (max-width: 400px) {
+  #page {
+    *zoom: 1;
+    width: auto;
+    max-width: 90%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #page:before, #page:after {
+    content: '';
+    display: table;
+  }
+  #page:after {
+    clear: both;
+  }
+}
 
 header {
   padding: 80px 0;
+}
+@media (max-width: 400px) {
+  header {
+    padding: 40px 20px;
+  }
 }
 
 h1 {

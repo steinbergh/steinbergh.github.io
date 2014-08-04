@@ -43,10 +43,16 @@ html {
 #page {
 	@include center(75%);
 	height: 100%;
+		@include breakpoint($breakpoint-small-width){
+ 		@include center(90%);	
+ }
 }
 
 header{
 	padding: 80px 0;
+	  @include breakpoint($breakpoint-small-width){
+		padding: 40px 20px;
+	}
 }
 
 h1 {
