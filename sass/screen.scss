@@ -1,0 +1,212 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "../jeet/index";
+@import "compass/reset";
+@import "variables";
+@import "breakpoint";
+@import "compass";
+@import "compass/css3";
+
+//MIXINS
+// @include edit();
+
+@function makelongshadow($color) {
+  $val: 0px 0px $color;
+  @for $i from 1 through 200 {
+    $val: #{$val}, #{$i}px #{$i}px #{$color};
+  }
+  @return $val;
+}
+
+@mixin longshadow($color) {
+  text-shadow: makelongshadow($color);
+}
+@include font-face(Klinic, font-files("../fonts/klinicslabbold-webfont.woff"));
+
+@mixin folio-squares($bgcolor, $size, $font-family) {
+	background-color: $bgcolor;
+	font-family: $font-family;
+	color: white;
+	text-align: center;
+	font-size: $size;
+}
+
+//MAIN STYLES
+html {
+	height: 101%;
+	width: 100%;
+}
+
+#page {
+	@include center(75%);
+	height: 100%;
+		@include breakpoint($breakpoint-small-width){
+ 		@include center(90%);	
+ }
+}
+
+header{
+	padding: 80px 0;
+	  @include breakpoint($breakpoint-small-width){
+		padding: 40px 20px;
+	}
+}
+
+h1 {
+		font-family: Klinic;
+		font-size: 3em;
+		word-spacing: 0.25em;
+		letter-spacing: 1px;
+		float: left;
+}
+
+nav {
+	font-family: Klinic;
+	font-size: 1.5em;
+	text-align: right;
+	word-spacing: 1em;
+	a {
+		text-decoration: none;
+		color: #000;
+		&:hover {
+			text-decoration: none;
+			color: #ddd;
+		}
+	}
+}
+
+.wrapper {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	float: left;
+	overflow: hidden;
+}
+
+.full-width {
+  @include span(1/2);
+  height: 500px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  @include breakpoint($breakpoint-small-width){
+  	@include span(1);
+  	height:400px;
+  }
+}
+
+.half-width {
+	@include span(1/4);
+	height: 500px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	@include breakpoint($breakpoint-small-width){
+		@include span(1/2);
+		height: 400px;
+	}
+}
+
+.quarter-width {
+	@include span(1/4);
+	height: 250px;
+	overflow: hidden;
+	position: relative;
+		@include breakpoint($breakpoint-small-width){
+		@include span(1/2);
+		height: 200px;
+	}
+}
+
+// #C, #M, #Y, #K {
+// transition: opacity 0.15s linear;
+// 	&:hover {
+// 		opacity: 0.7;
+// 	}
+// }
+
+
+#C {
+	@include folio-squares($cyan, 450px, Klinic);
+			@include breakpoint($breakpoint-small-width){
+				@include folio-squares($cyan, 350px, Klinic);
+	}
+}
+
+#M {
+	overflow: hidden;
+	@include folio-squares($magenta, 450px, Klinic);
+			@include breakpoint($breakpoint-small-width){
+				@include folio-squares($magenta, 350px, Klinic);
+	}
+}
+
+#Y {
+	overflow: hidden;
+	@include folio-squares($yellow, 250px, Klinic);
+			@include breakpoint($breakpoint-small-width){
+				@include folio-squares($yellow, 150px, Klinic);
+	}
+}
+
+#K {
+	overflow: hidden;
+	@include folio-squares($key, 250px, Klinic);
+			@include breakpoint($breakpoint-small-width){
+				@include folio-squares($key, 150px, Klinic);
+	}
+}
+
+#ampersand {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+
+#curly-brace {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+
+#ellipses {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+
+#at-symbol {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	transition: bottom 0.15s linear;
+	left: 0;
+	right: 0
+	&:hover{
+		bottom: -500px;
+	}
+}
+
+
+footer {
+	padding: 80px 0;
+	font-family: Klinic;
+	text-align: center;
+	clear: both;
+			@include breakpoint($breakpoint-small-width){
+			padding: 60px;
+	}
+}
+
+
+
