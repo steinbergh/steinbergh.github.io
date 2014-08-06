@@ -1,10 +1,10 @@
 $(document).ready(function(){
 	$('.full-width').mouseenter(function(){
-      $('#ampersand').animate({left: "-1000px"}, 300, "swing");
+      $('#ampersand').animate({left: "-1000px"}, 300);
    });
 
 	$('.full-width').mouseleave(function(){
-      $('#ampersand').animate({left: "0px"}, 300, "swing");
+      $('#ampersand').animate({left: "0px"}, 300);
    });
 
 	$('.half-width').mouseenter(function(){
