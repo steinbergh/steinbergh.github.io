@@ -1,16 +1,16 @@
 $(document).ready(function(){
-	$('.full-width').mouseenter(function(){
+	$('#C').mouseenter(function(){
       $('#ampersand').animate({left: "-1000px"}, 300);
    });
 
-	$('.full-width').mouseleave(function(){
+	$('#C').mouseleave(function(){
       $('#ampersand').animate({left: "0px"}, 300);
    });
 
-	$('.half-width').mouseenter(function(){
+	$('#M').mouseenter(function(){
       $('#curly-brace').animate({top: "-500px"}, 300);
    });
-	$('.half-width').mouseleave(function(){
+	$('#M').mouseleave(function(){
       $('#curly-brace').animate({top: "0px"}, 300)
    });
 
