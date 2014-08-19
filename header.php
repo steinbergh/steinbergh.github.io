@@ -14,12 +14,12 @@
 <body>
   <div id="page">
     <header>
-      <h1><a href="/index.php">HENRY STEINBERG</a></h1>
+      <h1><a href="/steinbergh.github.io/index.php">HENRY STEINBERG</a></h1>
        <!--Start Main Nav-->
       <nav class="main-nav" id="main-nav">
         <a href="#" class="print"><span>print</span></a>
         <a href="#" class="web"><span>web</span></a>
-        <a href="/about.php" class="about"><span>about</span></a>
+        <a href="/steinbergh.github.io/about.php" class="about"><span>about</span></a>
         <a href="#" class="contact"><span>contact</span></a>
       </nav>
       <!--End Main Nav-->

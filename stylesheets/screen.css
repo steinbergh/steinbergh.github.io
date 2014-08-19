@@ -92,22 +92,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 @font-face {
   font-family: "Klinic";
-  src: url('../fonts/../fonts/klinicslabmeduim-webfont.eot');
-  src: url('../fonts/../fonts/klinicslabmeduim-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/../fonts/klinicslabmedium-webfont.woff') format('woff'), url('../fonts/../fonts/klinicslabmedium-webfont.ttf') format('truetype'), url('../fonts/../fonts/klinicslabmedium-webfont.svg') format('svg');
-  font-weight: 200;
-  font-style: medium;
-}
-
-@font-face {
-  font-family: "Klinic";
-  src: url('../fonts/../fonts/klinicslabmeduimit-webfont.eot');
-  src: url('../fonts/../fonts/klinicslabmeduimit-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/../fonts/klinicslabmediumit-webfont.woff') format('woff'), url('../fonts/../fonts/klinicslabmediumit-webfont.ttf') format('truetype'), url('../fonts/../fonts/klinicslabmediumit-webfont.svg') format('svg');
-  font-weight: 200;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Klinic";
   src: url('../fonts/../fonts/klinicslabbold-webfont.eot');
   src: url('../fonts/../fonts/klinicslabbold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/../fonts/klinicslabbold-webfont.woff') format('woff'), url('../fonts/../fonts/klinicslabbold-webfont.ttf') format('truetype'), url('../fonts/../fonts/klinicslabbold-webfont.svg') format('svg');
   font-weight: bold;
@@ -119,6 +103,38 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   src: url('../fonts/../fonts/klinicslabbold-webfont.eot');
   src: url('../fonts/../fonts/klinicslabbold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/../fonts/klinicslabboldit-webfont.woff') format('woff'), url('../fonts/../fonts/klinicslabboldit-webfont.ttf') format('truetype'), url('../fonts/../fonts/klinicslabboldit-webfont.svg') format('svg');
   font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "KlinicMed";
+  src: url('../fonts/../fonts/klinicslabmeduim-webfont.eot');
+  src: url('../fonts/../fonts/klinicslabmeduim-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/../fonts/klinicslabmedium-webfont.woff') format('woff'), url('../fonts/../fonts/klinicslabmedium-webfont.ttf') format('truetype'), url('../fonts/../fonts/klinicslabmedium-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KlinicMed";
+  src: url('../fonts/../fonts/klinicslabmeduimit-webfont.eot');
+  src: url('../fonts/../fonts/klinicslabmeduimit-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/../fonts/klinicslabmediumit-webfont.woff') format('woff'), url('../fonts/../fonts/klinicslabmediumit-webfont.ttf') format('truetype'), url('../fonts/../fonts/klinicslabmediumit-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "KlinicLight";
+  src: url('../fonts/../fonts/klinicslablight-webfont.eot');
+  src: url('../fonts/../fonts/klinicslablight-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/../fonts/klinicslablight-webfont.woff') format('woff'), url('../fonts/../fonts/klinicslablight-webfont.ttf') format('truetype'), url('../fonts/../fonts/klinicslablight-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KlinicLight";
+  src: url('../fonts/../fonts/klinicslablightit-webfont.eot');
+  src: url('../fonts/../fonts/klinicslablightit-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/../fonts/klinicslablightit-webfont.woff') format('woff'), url('../fonts/../fonts/klinicslablightit-webfont.ttf') format('truetype'), url('../fonts/../fonts/klinicslablightit-webfont.svg') format('svg');
+  font-weight: normal;
   font-style: italic;
 }
 
@@ -213,7 +229,6 @@ h2 {
 nav {
   outline: 3px soild red;
   font-family: Klinic;
-  font-weight: medium;
   font-size: 1.5em;
   text-align: right;
   word-spacing: 1em;
@@ -373,8 +388,8 @@ nav {
 #C {
   background-color: #00a9ff;
   font-family: Klinic;
-  font-style: italic;
-  font-weight: medium;
+  font-style: bold;
+  font-weight: bold;
   color: #fafafa;
   text-align: center;
   font-size: 450px;
@@ -388,7 +403,7 @@ nav {
     background-color: #00a9ff;
     font-family: Klinic;
     font-style: italic;
-    font-weight: medium;
+    font-weight: 200;
     color: #fafafa;
     text-align: center;
     font-size: 350px;
@@ -403,8 +418,8 @@ nav {
   overflow: hidden;
   background-color: #ff0c3e;
   font-family: Klinic;
-  font-style: medium;
-  font-weight: 200;
+  font-style: bold;
+  font-weight: bold;
   color: #fafafa;
   text-align: center;
   font-size: 450px;
@@ -417,7 +432,7 @@ nav {
   #M {
     background-color: #ff0c3e;
     font-family: Klinic;
-    font-style: medium;
+    font-style: italic;
     font-weight: 200;
     color: #fafafa;
     text-align: center;
@@ -447,8 +462,8 @@ nav {
   #Y {
     background-color: #fde338;
     font-family: Klinic;
-    font-style: bold;
-    font-weight: bold;
+    font-style: italic;
+    font-weight: 200;
     color: #fafafa;
     text-align: center;
     font-size: 150px;
@@ -477,8 +492,8 @@ nav {
   #K {
     background-color: #0e1752;
     font-family: Klinic;
-    font-style: bold;
-    font-weight: bold;
+    font-style: italic;
+    font-weight: 200;
     color: #fafafa;
     text-align: center;
     font-size: 150px;

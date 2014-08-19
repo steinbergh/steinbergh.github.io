@@ -31,11 +31,16 @@
 @include font-face(Klinic, font-files("../fonts/klinicslabbook-webfont.woff", "../fonts/klinicslabbook-webfont.ttf", "../fonts/klinicslabboook-webfont.svg"), "../fonts/klinicslabbook-webfont.eot", normal, normal);
 @include font-face(Klinic, font-files("../fonts/klinicslabbookit-webfont.woff", "../fonts/klinicslabbookit-webfont.ttf", "../fonts/klinicslabboookit-webfont.svg"), "../fonts/klinicslabbookit-webfont.eot", normal, italic);
 
-@include font-face(Klinic, font-files("../fonts/klinicslabmedium-webfont.woff", "../fonts/klinicslabmedium-webfont.ttf", "../fonts/klinicslabmedium-webfont.svg"), "../fonts/klinicslabmeduim-webfont.eot", 200, medium);
-@include font-face(Klinic, font-files("../fonts/klinicslabmediumit-webfont.woff", "../fonts/klinicslabmediumit-webfont.ttf", "../fonts/klinicslabmediumit-webfont.svg"), "../fonts/klinicslabmeduimit-webfont.eot", 200, italic);
-
 @include font-face(Klinic, font-files("../fonts/klinicslabbold-webfont.woff", "../fonts/klinicslabbold-webfont.ttf", "../fonts/klinicslabbold-webfont.svg"), "../fonts/klinicslabbold-webfont.eot", bold, bold);
 @include font-face(Klinic, font-files("../fonts/klinicslabboldit-webfont.woff", "../fonts/klinicslabboldit-webfont.ttf", "../fonts/klinicslabboldit-webfont.svg"), "../fonts/klinicslabbold-webfont.eot", bold, italic);
+
+@include font-face(KlinicMed, font-files("../fonts/klinicslabmedium-webfont.woff", "../fonts/klinicslabmedium-webfont.ttf", "../fonts/klinicslabmedium-webfont.svg"), "../fonts/klinicslabmeduim-webfont.eot", normal, normal);
+@include font-face(KlinicMed, font-files("../fonts/klinicslabmediumit-webfont.woff", "../fonts/klinicslabmediumit-webfont.ttf", "../fonts/klinicslabmediumit-webfont.svg"), "../fonts/klinicslabmeduimit-webfont.eot", normal, italic);
+
+@include font-face(KlinicLight, font-files("../fonts/klinicslablight-webfont.woff", "../fonts/klinicslablight-webfont.ttf", "../fonts/klinicslablight-webfont.svg"), "../fonts/klinicslablight-webfont.eot", normal, normal);
+@include font-face(KlinicLight, font-files("../fonts/klinicslablightit-webfont.woff", "../fonts/klinicslablightit-webfont.ttf", "../fonts/klinicslablightit-webfont.svg"), "../fonts/klinicslablightit-webfont.eot", normal, italic);
+
+
 
 /**
  *Custom Mixins
@@ -109,7 +114,6 @@ h2 {
 nav {
 	outline: 3px soild red;
 	font-family: Klinic;
-	font-weight: medium;
 	font-size: 1.5em;
 	text-align: right;
 	word-spacing: 1em;
@@ -177,17 +181,17 @@ transition: opacity 0.15s linear;
 }
 
 #C {
-	@include folio-squares($cyan, 450px, Klinic, italic, medium);
+	@include folio-squares($cyan, 450px, Klinic, bold, bold);
 			@include breakpoint($breakpoint-small-width){
-				@include folio-squares($cyan, 350px, Klinic, italic, medium);
+				@include folio-squares($cyan, 350px, Klinic, italic, 200);
 	}
 }
 
 #M {
 	overflow: hidden;
-	@include folio-squares($magenta, 450px, Klinic, medium, 200);
+	@include folio-squares($magenta, 450px, Klinic, bold, bold);
 			@include breakpoint($breakpoint-small-width){
-				@include folio-squares($magenta, 350px, Klinic, medium, 200);
+				@include folio-squares($magenta, 350px, Klinic, italic, 200);
 	}
 }
 
@@ -195,7 +199,7 @@ transition: opacity 0.15s linear;
 	overflow: hidden;
 	@include folio-squares($yellow, 250px, Klinic, bold, bold);
 			@include breakpoint($breakpoint-small-width){
-				@include folio-squares($yellow, 150px, Klinic, bold, bold);
+				@include folio-squares($yellow, 150px, Klinic, italic, 200);
 	}
 }
 
@@ -203,7 +207,7 @@ transition: opacity 0.15s linear;
 	overflow: hidden;
 	@include folio-squares($key, 250px, Klinic, bold, bold);
 			@include breakpoint($breakpoint-small-width){
-				@include folio-squares($key, 150px, Klinic, bold, bold);
+				@include folio-squares($key, 150px, Klinic, italic, 200);
 	}
 }
 
@@ -245,12 +249,16 @@ transition: opacity 0.15s linear;
 		font-size: 36px;
 		color: $yellow;
 	}
+
+
 	.bold {
 		font-weight: bold;
 	}
+
 	.italic {
 		font-style: italic;
 	}
+
 	.bold-italic {
 		font-style: italic;
 		font-weight: bold;

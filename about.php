@@ -1,4 +1,4 @@
-<? require ('header.php'); ?>
+<?php require ('header.php'); ?>
 	<div id="page">
 		<div id-="resume-alpha">
 			<div class="resume" id="edu">
@@ -69,4 +69,4 @@
 			</div>
 		</div>
 	</div>	
-<? include ('footer.php'); ?>
+<?php include ('footer.php'); ?>
