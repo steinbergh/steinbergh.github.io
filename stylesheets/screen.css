@@ -71,13 +71,71 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/**
+ *Type Family
+ */
 @font-face {
   font-family: "Klinic";
-  src: url('../fonts/../fonts/klinicslabbold-webfont.woff') format('woff');
+  src: url('../fonts/../fonts/klinicslabbook-webfont.eot');
+  src: url('../fonts/../fonts/klinicslabbook-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/../fonts/klinicslabbook-webfont.woff') format('woff'), url('../fonts/../fonts/klinicslabbook-webfont.ttf') format('truetype'), url('../fonts/../fonts/klinicslabboook-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: "Klinic";
+  src: url('../fonts/../fonts/klinicslabbookit-webfont.eot');
+  src: url('../fonts/../fonts/klinicslabbookit-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/../fonts/klinicslabbookit-webfont.woff') format('woff'), url('../fonts/../fonts/klinicslabbookit-webfont.ttf') format('truetype'), url('../fonts/../fonts/klinicslabboookit-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Klinic";
+  src: url('../fonts/../fonts/klinicslabmeduim-webfont.eot');
+  src: url('../fonts/../fonts/klinicslabmeduim-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/../fonts/klinicslabmedium-webfont.woff') format('woff'), url('../fonts/../fonts/klinicslabmedium-webfont.ttf') format('truetype'), url('../fonts/../fonts/klinicslabmedium-webfont.svg') format('svg');
+  font-weight: 200;
+  font-style: medium;
+}
+
+@font-face {
+  font-family: "Klinic";
+  src: url('../fonts/../fonts/klinicslabmeduimit-webfont.eot');
+  src: url('../fonts/../fonts/klinicslabmeduimit-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/../fonts/klinicslabmediumit-webfont.woff') format('woff'), url('../fonts/../fonts/klinicslabmediumit-webfont.ttf') format('truetype'), url('../fonts/../fonts/klinicslabmediumit-webfont.svg') format('svg');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Klinic";
+  src: url('../fonts/../fonts/klinicslabbold-webfont.eot');
+  src: url('../fonts/../fonts/klinicslabbold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/../fonts/klinicslabbold-webfont.woff') format('woff'), url('../fonts/../fonts/klinicslabbold-webfont.ttf') format('truetype'), url('../fonts/../fonts/klinicslabbold-webfont.svg') format('svg');
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Klinic";
+  src: url('../fonts/../fonts/klinicslabbold-webfont.eot');
+  src: url('../fonts/../fonts/klinicslabbold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/../fonts/klinicslabboldit-webfont.woff') format('woff'), url('../fonts/../fonts/klinicslabboldit-webfont.ttf') format('truetype'), url('../fonts/../fonts/klinicslabboldit-webfont.svg') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/**
+ *Custom Mixins
+ */
+/**
+ *Global Styles
+ */
 html {
+  font-size: 100%;
   height: 101%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
   width: 100%;
 }
 
@@ -91,7 +149,6 @@ html {
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
-  height: 100%;
 }
 #page:before, #page:after {
   content: '';
@@ -121,6 +178,15 @@ html {
   }
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  text-decoration: none;
+  color: #ddd;
+}
+
 header {
   padding: 80px 0;
 }
@@ -132,25 +198,25 @@ header {
 
 h1 {
   font-family: Klinic;
+  font-weight: bold;
   font-size: 3em;
   word-spacing: 0.25em;
   letter-spacing: 1px;
   float: left;
 }
 
-nav {
+h2 {
   font-family: Klinic;
+  font-size: 2em;
+}
+
+nav {
+  outline: 3px soild red;
+  font-family: Klinic;
+  font-weight: medium;
   font-size: 1.5em;
   text-align: right;
   word-spacing: 1em;
-}
-nav a {
-  text-decoration: none;
-  color: #000;
-}
-nav a:hover {
-  text-decoration: none;
-  color: #ddd;
 }
 
 .wrapper {
@@ -293,20 +359,43 @@ nav a:hover {
   }
 }
 
+#C, #M, #Y, #K {
+  transition: opacity 0.15s linear;
+}
+#C:hover, #M:hover, #Y:hover, #K:hover {
+  opacity: 0.7;
+}
+
+#squares-wrapper {
+  clear: both;
+}
+
 #C {
   background-color: #00a9ff;
   font-family: Klinic;
-  color: white;
+  font-style: italic;
+  font-weight: medium;
+  color: #fafafa;
   text-align: center;
   font-size: 450px;
+}
+#C a, #C a:hover {
+  text-decoration: none;
+  color: #fafafa;
 }
 @media (max-width: 400px) {
   #C {
     background-color: #00a9ff;
     font-family: Klinic;
-    color: white;
+    font-style: italic;
+    font-weight: medium;
+    color: #fafafa;
     text-align: center;
     font-size: 350px;
+  }
+  #C a, #C a:hover {
+    text-decoration: none;
+    color: #fafafa;
   }
 }
 
@@ -314,17 +403,29 @@ nav a:hover {
   overflow: hidden;
   background-color: #ff0c3e;
   font-family: Klinic;
-  color: white;
+  font-style: medium;
+  font-weight: 200;
+  color: #fafafa;
   text-align: center;
   font-size: 450px;
+}
+#M a, #M a:hover {
+  text-decoration: none;
+  color: #fafafa;
 }
 @media (max-width: 400px) {
   #M {
     background-color: #ff0c3e;
     font-family: Klinic;
-    color: white;
+    font-style: medium;
+    font-weight: 200;
+    color: #fafafa;
     text-align: center;
     font-size: 350px;
+  }
+  #M a, #M a:hover {
+    text-decoration: none;
+    color: #fafafa;
   }
 }
 
@@ -332,17 +433,29 @@ nav a:hover {
   overflow: hidden;
   background-color: #fde338;
   font-family: Klinic;
-  color: white;
+  font-style: bold;
+  font-weight: bold;
+  color: #fafafa;
   text-align: center;
   font-size: 250px;
+}
+#Y a, #Y a:hover {
+  text-decoration: none;
+  color: #fafafa;
 }
 @media (max-width: 400px) {
   #Y {
     background-color: #fde338;
     font-family: Klinic;
-    color: white;
+    font-style: bold;
+    font-weight: bold;
+    color: #fafafa;
     text-align: center;
     font-size: 150px;
+  }
+  #Y a, #Y a:hover {
+    text-decoration: none;
+    color: #fafafa;
   }
 }
 
@@ -350,44 +463,35 @@ nav a:hover {
   overflow: hidden;
   background-color: #0e1752;
   font-family: Klinic;
-  color: white;
+  font-style: bold;
+  font-weight: bold;
+  color: #fafafa;
   text-align: center;
   font-size: 250px;
+}
+#K a, #K a:hover {
+  text-decoration: none;
+  color: #fafafa;
 }
 @media (max-width: 400px) {
   #K {
     background-color: #0e1752;
     font-family: Klinic;
-    color: white;
+    font-style: bold;
+    font-weight: bold;
+    color: #fafafa;
     text-align: center;
     font-size: 150px;
   }
+  #K a, #K a:hover {
+    text-decoration: none;
+    color: #fafafa;
+  }
 }
 
-#ampersand {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-}
-
-#curly-brace {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-}
-
-#ellipses {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-}
-
+#ampersand,
+#curly-brace,
+#ellipses,
 #at-symbol {
   position: absolute;
   margin-left: auto;
@@ -396,9 +500,85 @@ nav a:hover {
   right: 0;
 }
 
-footer {
-  padding: 80px 0;
+/**
+*Resume Styles
+*/
+#res-ellipses {
   font-family: Klinic;
+  font-style: bold;
+  font-size: 500px;
+  color: #fde338;
+}
+
+#resume-alpha {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 79.4%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+#resume-alpha:before, #resume-alpha:after {
+  content: '';
+  display: table;
+}
+#resume-alpha:after {
+  clear: both;
+}
+#resume-alpha:last-child {
+  margin-right: 0%;
+}
+
+#resume-beta {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 17.6%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+#resume-beta:before, #resume-beta:after {
+  content: '';
+  display: table;
+}
+#resume-beta:after {
+  clear: both;
+}
+#resume-beta:last-child {
+  margin-right: 0%;
+}
+
+.resume {
+  font-family: Klinic;
+  font-size: 24px;
+  margin: 24px 0;
+}
+.resume h3 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #fde338;
+}
+.resume .bold {
+  font-weight: bold;
+}
+.resume .italic {
+  font-style: italic;
+}
+.resume .bold-italic {
+  font-style: italic;
+  font-weight: bold;
+}
+
+footer {
+  padding: 20px 0;
+  font-family: klinic;
+  font-weight: medium;
   text-align: center;
   clear: both;
 }

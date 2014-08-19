@@ -12,7 +12,7 @@ fonts_dir = "fonts"
 # Require any additional compass plugins installed on your system.
 require 'sassy-buttons'
 require 'breakpoint'
-require "rgbapng"
+require 'rgbapng'
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed

@@ -24,29 +24,66 @@
 @mixin longshadow($color) {
   text-shadow: makelongshadow($color);
 }
-@include font-face(Klinic, font-files("../fonts/klinicslabbold-webfont.woff"));
 
-@mixin folio-squares($bgcolor, $size, $font-family) {
+/**
+ *Type Family
+ */
+@include font-face(Klinic, font-files("../fonts/klinicslabbook-webfont.woff", "../fonts/klinicslabbook-webfont.ttf", "../fonts/klinicslabboook-webfont.svg"), "../fonts/klinicslabbook-webfont.eot", normal, normal);
+@include font-face(Klinic, font-files("../fonts/klinicslabbookit-webfont.woff", "../fonts/klinicslabbookit-webfont.ttf", "../fonts/klinicslabboookit-webfont.svg"), "../fonts/klinicslabbookit-webfont.eot", normal, italic);
+
+@include font-face(Klinic, font-files("../fonts/klinicslabmedium-webfont.woff", "../fonts/klinicslabmedium-webfont.ttf", "../fonts/klinicslabmedium-webfont.svg"), "../fonts/klinicslabmeduim-webfont.eot", 200, medium);
+@include font-face(Klinic, font-files("../fonts/klinicslabmediumit-webfont.woff", "../fonts/klinicslabmediumit-webfont.ttf", "../fonts/klinicslabmediumit-webfont.svg"), "../fonts/klinicslabmeduimit-webfont.eot", 200, italic);
+
+@include font-face(Klinic, font-files("../fonts/klinicslabbold-webfont.woff", "../fonts/klinicslabbold-webfont.ttf", "../fonts/klinicslabbold-webfont.svg"), "../fonts/klinicslabbold-webfont.eot", bold, bold);
+@include font-face(Klinic, font-files("../fonts/klinicslabboldit-webfont.woff", "../fonts/klinicslabboldit-webfont.ttf", "../fonts/klinicslabboldit-webfont.svg"), "../fonts/klinicslabbold-webfont.eot", bold, italic);
+
+/**
+ *Custom Mixins
+ */
+@mixin folio-squares($bgcolor, $size, $font-family, $font-style, $font-weight) {
 	background-color: $bgcolor;
 	font-family: $font-family;
-	color: white;
+	font-style: $font-style;
+	font-weight: $font-weight;
+	color: $white;
 	text-align: center;
 	font-size: $size;
+	a, a:hover {
+		text-decoration: none;
+		color: $white;
+	}
 }
 
-//MAIN STYLES
+/**
+ *Global Styles
+ */
 html {
+	font-size:100%;
 	height: 101%;
+	width: 100%;
+}
+
+body {
+	height: 100%;
 	width: 100%;
 }
 
 #page {
 	@include center(75%);
-	height: 100%;
 		@include breakpoint($breakpoint-small-width){
  		@include center(90%);	
  }
 }
+
+a {
+	text-decoration: none;
+	color: #000;
+	&:hover {
+		text-decoration: none;
+		color: #ddd;
+	}
+}
+
 
 header{
 	padding: 80px 0;
@@ -57,25 +94,25 @@ header{
 
 h1 {
 	font-family: Klinic;
+	font-weight: bold;
 	font-size: 3em;
 	word-spacing: 0.25em;
 	letter-spacing: 1px;
 	float: left;
 }
 
-nav {
+h2 {
 	font-family: Klinic;
+	font-size: 2em;
+}
+
+nav {
+	outline: 3px soild red;
+	font-family: Klinic;
+	font-weight: medium;
 	font-size: 1.5em;
 	text-align: right;
 	word-spacing: 1em;
-	a {
-		text-decoration: none;
-		color: #000;
-		&:hover {
-			text-decoration: none;
-			color: #ddd;
-		}
-	}
 }
 
 .wrapper {
@@ -90,6 +127,8 @@ nav {
 .full-width {
   @include span(1/2);
   height: 500px;
+  // height: 70%;
+  // width: 50%;
   float: left;
   overflow: hidden;
   position: relative;
@@ -102,6 +141,8 @@ nav {
 .half-width {
 	@include span(1/4);
 	height: 500px;
+	// height: 70%;
+	// width: 25%;
 	float: left;
 	overflow: hidden;
 	position: relative;
@@ -114,6 +155,8 @@ nav {
 .quarter-width {
 	@include span(1/4);
 	height: 250px;
+	// height: 35%;
+	// width: 25%;
 	overflow: hidden;
 	position: relative;
 		@include breakpoint($breakpoint-small-width){
@@ -122,69 +165,51 @@ nav {
 	}
 }
 
-// #C, #M, #Y, #K {
-// transition: opacity 0.15s linear;
-// 	&:hover {
-// 		opacity: 0.7;
-// 	}
-// }
+#C, #M, #Y, #K {
+transition: opacity 0.15s linear;
+	&:hover {
+		opacity: 0.7;
+	}
+}
 
+#squares-wrapper {
+	clear: both;
+}
 
 #C {
-	@include folio-squares($cyan, 450px, Klinic);
+	@include folio-squares($cyan, 450px, Klinic, italic, medium);
 			@include breakpoint($breakpoint-small-width){
-				@include folio-squares($cyan, 350px, Klinic);
+				@include folio-squares($cyan, 350px, Klinic, italic, medium);
 	}
 }
 
 #M {
 	overflow: hidden;
-	@include folio-squares($magenta, 450px, Klinic);
+	@include folio-squares($magenta, 450px, Klinic, medium, 200);
 			@include breakpoint($breakpoint-small-width){
-				@include folio-squares($magenta, 350px, Klinic);
+				@include folio-squares($magenta, 350px, Klinic, medium, 200);
 	}
 }
 
 #Y {
 	overflow: hidden;
-	@include folio-squares($yellow, 250px, Klinic);
+	@include folio-squares($yellow, 250px, Klinic, bold, bold);
 			@include breakpoint($breakpoint-small-width){
-				@include folio-squares($yellow, 150px, Klinic);
+				@include folio-squares($yellow, 150px, Klinic, bold, bold);
 	}
 }
 
 #K {
 	overflow: hidden;
-	@include folio-squares($key, 250px, Klinic);
+	@include folio-squares($key, 250px, Klinic, bold, bold);
 			@include breakpoint($breakpoint-small-width){
-				@include folio-squares($key, 150px, Klinic);
+				@include folio-squares($key, 150px, Klinic, bold, bold);
 	}
 }
 
-#ampersand {
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-}
-
-#curly-brace {
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-}
-
-#ellipses {
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-}
-
+#ampersand,
+#curly-brace,
+#ellipses,
 #at-symbol {
 	position: absolute;
 	margin-left: auto;
@@ -193,11 +218,50 @@ nav {
 	right: 0;
 }
 
+/**
+*Resume Styles
+*/
+
+#res-ellipses {
+	font-family: Klinic;
+	font-style: bold;
+	font-size: 500px;
+	color: $yellow;
+}
+#resume-alpha {
+	@include col(4/5);
+}
+
+#resume-beta {
+	@include col (1/5);
+}
+
+.resume {
+	font-family: Klinic;
+	font-size: 24px;
+	margin: 24px 0;
+	h3 {
+		font-weight: bold;
+		font-size: 36px;
+		color: $yellow;
+	}
+	.bold {
+		font-weight: bold;
+	}
+	.italic {
+		font-style: italic;
+	}
+	.bold-italic {
+		font-style: italic;
+		font-weight: bold;
+	}
+}
 
 
 footer {
-	padding: 80px 0;
-	font-family: Klinic;
+	padding: 20px 0;
+	font-family: klinic;
+	font-weight: medium;
 	text-align: center;
 	clear: both;
 			@include breakpoint($breakpoint-small-width){
