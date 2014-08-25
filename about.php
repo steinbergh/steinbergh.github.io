@@ -9,6 +9,7 @@
 					<li><a href="./press.php" class="print"><span>print</span></a></li>
 	        <li><a href="./web.php" class="web"><span>web</span></a></li>
 	        <li><a href="./contact.php" class="contact"><span>contact</span></a></li>
+	        <li><a href="./index.php">home</a></li> 
 			<!--<a href="#about-me"><li>About Me</li></a>
 					<a href="#edu"><li>Education</li></a>
 					<a href="#exp"><li>Experience</li></a>
@@ -18,8 +19,6 @@
 					<a href="#workshops"><li>Workshops</li></a>
 					<a href="#member"><li>Memberships</li></a>
 					<a href="#skills"><li>Skills</li></a>-->
-					<br />
-					<a href="./index.php"><li><b>home</b></li></a> 
 				</ul>
 			</div>
 		</div>
