@@ -4,7 +4,7 @@
 
 		<div id="nav-wrapper">
 			<div id="resume-nav">
-				<a href="./index.php"><img src="images/MyFace.jpg" alt="Henry Steinberg"></a>
+				<a href="./index.php"><img src="images/MyFace.JPG" alt="Henry Steinberg"></a>
 				<ul>
 					<li><a href="./press.php" class="print"><span>print</span></a></li>
 	        <li><a href="./web.php" class="web"><span>web</span></a></li>

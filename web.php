@@ -1,3 +1,3 @@
-<?php require('header.php');?>
+<?php require('includes/header.php');?>
 <h2>web work</h2>
-<?php include('footer.php');?>
+<?php include('includes/footer.php');?>
