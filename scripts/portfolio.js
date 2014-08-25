@@ -1,30 +1,22 @@
-// $(document).ready(function(){
-// 	$('#C').mouseenter(function(){
-//       $('#ampersand').animate({left: "-1000px"}, 300);
-//    });
+$(document).ready(function(){
 
-// 	$('#C').mouseleave(function(){
-//       $('#ampersand').animate({left: "0px"}, 300);
-//    });
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
 
-// 	$('#M').mouseenter(function(){
-//       $('#curly-brace').animate({top: "-500px"}, 300);
-//    });
-// 	$('#M').mouseleave(function(){
-//       $('#curly-brace').animate({top: "0px"}, 300)
-//    });
-
-// 	$('#Y').mouseenter(function(){
-//       $('#ellipses').animate({right: "-500px"}, 300);
-//    });
-// 	$('#Y').mouseleave(function(){
-//       $('#ellipses').animate({right: "0px"}, 300)
-
-//    });
-// 	$('#K').mouseenter(function(){
-//       $('#at-symbol').animate({bottom: "-500px"}, 300);
-//    });
-// 	$('#K').mouseleave(function(){
-//       $('#at-symbol').animate({bottom: "0px"}, 300)
-//    });
+//   $('#thumb img').click(function(){
+//       console.log("this is working");
+//       $('#large').attr('src',$(this).attr('src').replace('thumb','large'));
+//   });
 // });

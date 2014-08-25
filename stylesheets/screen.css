@@ -173,7 +173,7 @@ body {
 #page:after {
   clear: both;
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   #page {
     *zoom: 1;
     width: auto;
@@ -204,9 +204,9 @@ a:hover {
 }
 
 header {
-  padding: 80px 0;
+  padding: 50px 0;
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   header {
     padding: 40px 20px;
   }
@@ -265,7 +265,7 @@ nav {
 .full-width:after {
   clear: both;
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .full-width {
     *zoom: 1;
     float: left;
@@ -309,7 +309,7 @@ nav {
 .half-width:after {
   clear: both;
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .half-width {
     *zoom: 1;
     float: left;
@@ -352,7 +352,7 @@ nav {
 .quarter-width:after {
   clear: both;
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .quarter-width {
     *zoom: 1;
     float: left;
@@ -398,7 +398,7 @@ nav {
   text-decoration: none;
   color: #fafafa;
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   #C {
     background-color: #00a9ff;
     font-family: Klinic;
@@ -428,7 +428,7 @@ nav {
   text-decoration: none;
   color: #fafafa;
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   #M {
     background-color: #ff0c3e;
     font-family: Klinic;
@@ -458,7 +458,7 @@ nav {
   text-decoration: none;
   color: #fafafa;
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   #Y {
     background-color: #fde338;
     font-family: Klinic;
@@ -488,7 +488,7 @@ nav {
   text-decoration: none;
   color: #fafafa;
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   #K {
     background-color: #0e1752;
     font-family: Klinic;
@@ -518,55 +518,22 @@ nav {
 /**
 *Resume Styles
 */
-#res-ellipses {
-  font-family: Klinic;
-  font-style: bold;
-  font-size: 500px;
-  color: #fde338;
-}
-
 #resume-alpha {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  padding-left: 0;
-  padding-right: 0;
-  width: 79.4%;
-  margin-left: 0%;
-  margin-right: 3%;
-}
-#resume-alpha:before, #resume-alpha:after {
-  content: '';
-  display: table;
-}
-#resume-alpha:after {
-  clear: both;
-}
-#resume-alpha:last-child {
-  margin-right: 0%;
+  margin-left: 50px;
 }
 
-#resume-beta {
-  *zoom: 1;
+#resume-nav {
+  position: fixed;
+  left: 20px;
+  font-size: 24px;
+  font-family: klinic;
+  text-align: center;
   float: left;
-  clear: none;
-  text-align: inherit;
-  padding-left: 0;
-  padding-right: 0;
-  width: 17.6%;
-  margin-left: 0%;
-  margin-right: 3%;
 }
-#resume-beta:before, #resume-beta:after {
-  content: '';
-  display: table;
-}
-#resume-beta:after {
-  clear: both;
-}
-#resume-beta:last-child {
-  margin-right: 0%;
+#resume-nav img {
+  border-radius: 999px;
+  width: 185px;
+  height: 185px;
 }
 
 .resume {
@@ -576,8 +543,16 @@ nav {
 }
 .resume h3 {
   font-weight: bold;
+  font-size: 42px;
+  color: #00a9ff;
+}
+.resume #about-me p {
   font-size: 36px;
-  color: #fde338;
+}
+.resume h4 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 24px;
 }
 .resume .bold {
   font-weight: bold;
@@ -590,14 +565,30 @@ nav {
   font-weight: bold;
 }
 
+/**
+*Press Gallery Styles
+*/
+#thumb img {
+  height: 30%;
+  width: 30%;
+  margin: 10px;
+  float: left;
+}
+
+/**
+*footer styles
+*/
 footer {
   padding: 20px 0;
   font-family: klinic;
-  font-weight: medium;
   text-align: center;
   clear: both;
 }
-@media (max-width: 400px) {
+footer .social {
+  font-size: 40px;
+  padding: 0 10px;
+}
+@media (max-width: 600px) {
   footer {
     padding: 60px;
   }
