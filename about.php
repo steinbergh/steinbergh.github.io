@@ -25,7 +25,7 @@
 		<div id="resume-alpha">
 			<div class="resume" id="about-me">
 				<h3>Hi!</h3>
-				<p>Hi! My name is Henry Steinberg and I am a driven and dedicated young creative professional living in Philadelphia. I am a front-end web developer and letterpress printer and I'm passionate about good people, good paper and good design.</p>
+				<p>My name is Henry Steinberg and I am a driven and dedicated young creative professional living in Philadelphia. I am a front-end web developer and letterpress printer and I'm passionate about good people, good paper and good design.</p>
 			</div>
 			<div class="resume" id="edu">
 				<h3>Education</h3>
