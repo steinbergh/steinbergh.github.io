@@ -4,8 +4,7 @@
 	<nav class="main-nav">
     <a href="./web.php" class="web"><span>web</span></a>
     <a href="./about.php" class="About"><span>about</span></a>
-    <a href="./contact.php" class="contact"><span>contact</span></a>
-    <a href="./index.php" class="contact"><span>home</span></a>
+    <a href="./index.php" class="home"><span>home</span></a>
 	</nav>
 </header>
 

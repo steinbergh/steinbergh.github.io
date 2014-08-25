@@ -112,11 +112,15 @@ h2 {
 }
 
 nav {
-	outline: 3px soild red;
 	font-family: Klinic;
 	font-size: 1.5em;
 	text-align: right;
 	word-spacing: 1em;
+	@include breakpoint($breakpoint-small-width) {
+		clear: both;
+		text-align: center;
+		margin-top: 120px;
+	}
 }
 
 .wrapper {
@@ -253,22 +257,22 @@ transition: opacity 0.15s linear;
 		position:relative;
 		text-align: center;
 		ul {
-
 			clear: both;
 			li{
-				margin: 20px auto;
-				padding: 0 10px;
+				margin: 0 auto;
+				padding: 24px 5px;
 				font-weight: bold;
 				float: right;
 			}
 		}
 		img {
-			margin: 20px auto;
+			margin: 0 auto;
 		}
 	}
 }
 
 .resume {
+	@iclude box-sizing(border-box);
 	font-family: Klinic;
 	font-size: 24px;
 	margin: 24px 0;
@@ -278,9 +282,7 @@ transition: opacity 0.15s linear;
 		color: $cyan;
 	}
 	#about-me{
-		p{
 			font-size: 36px;
-		}
 	}
 
 	h4{
@@ -301,6 +303,9 @@ transition: opacity 0.15s linear;
 		font-style: italic;
 		font-weight: bold;
 	}
+	@include breakpoint($breakpoint-small-width) {
+		margin: 24px 0;
+	}
 }
 
 /**
@@ -320,13 +325,26 @@ transition: opacity 0.15s linear;
 	}
 }
 
-// #display {
-// 	#large {
-// 		@include center(50%);
-// 		height: 30%;
-// 		width: 30%;
-// 	}
-// }
+h3 {
+	font-size: 32px;
+	font-family: Klinic;
+}
+
+.project {
+	font-family: klinic;
+	p {
+		font-size: 18px;
+		}
+		a {
+			font-size: 18px;
+			font-weight: bold;
+		}
+		h4{
+			font-size: 24px;
+			line-height: 24px;
+			color: $cyan;
+	}
+}
 
 
 /**
@@ -342,7 +360,10 @@ footer {
 		padding: 0 10px;
 	}
 	@include breakpoint($breakpoint-small-width){
-			padding: 60px;
+		padding: 60px;
+		.social {
+			padding: 0;
+		} 
 	}
 }
 

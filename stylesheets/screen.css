@@ -227,11 +227,17 @@ h2 {
 }
 
 nav {
-  outline: 3px soild red;
   font-family: Klinic;
   font-size: 1.5em;
   text-align: right;
   word-spacing: 1em;
+}
+@media (max-width: 600px) {
+  nav {
+    clear: both;
+    text-align: center;
+    margin-top: 120px;
+  }
 }
 
 .wrapper {
@@ -551,17 +557,18 @@ nav {
     clear: both;
   }
   #resume-nav ul li {
-    margin: 20px auto;
-    padding: 0 10px;
+    margin: 0 auto;
+    padding: 24px 5px;
     font-weight: bold;
     float: right;
   }
   #resume-nav img {
-    margin: 20px auto;
+    margin: 0 auto;
   }
 }
 
 .resume {
+  @iclude box-sizing(border-box);
   font-family: Klinic;
   font-size: 24px;
   margin: 24px 0;
@@ -571,7 +578,7 @@ nav {
   font-size: 42px;
   color: #00a9ff;
 }
-.resume #about-me p {
+.resume #about-me {
   font-size: 36px;
 }
 .resume h4 {
@@ -588,6 +595,11 @@ nav {
 .resume .bold-italic {
   font-style: italic;
   font-weight: bold;
+}
+@media (max-width: 600px) {
+  .resume {
+    margin: 24px 0;
+  }
 }
 
 /**
@@ -606,6 +618,27 @@ nav {
   }
 }
 
+h3 {
+  font-size: 32px;
+  font-family: Klinic;
+}
+
+.project {
+  font-family: klinic;
+}
+.project p {
+  font-size: 18px;
+}
+.project a {
+  font-size: 18px;
+  font-weight: bold;
+}
+.project h4 {
+  font-size: 24px;
+  line-height: 24px;
+  color: #00a9ff;
+}
+
 /**
 *footer styles
 */
@@ -622,5 +655,8 @@ footer .social {
 @media (max-width: 600px) {
   footer {
     padding: 60px;
+  }
+  footer .social {
+    padding: 0;
   }
 }

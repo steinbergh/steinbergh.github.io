@@ -8,7 +8,6 @@
 				<ul>
 					<li><a href="./press.php" class="print"><span>print</span></a></li>
 	        <li><a href="./web.php" class="web"><span>web</span></a></li>
-	        <li><a href="./contact.php" class="contact"><span>contact</span></a></li>
 	        <li><a href="./index.php">home</a></li> 
 			<!--<a href="#about-me"><li>About Me</li></a>
 					<a href="#edu"><li>Education</li></a>
@@ -26,7 +25,7 @@
 		<div id="resume-alpha">
 			<div class="resume" id="about-me">
 				<h3>Hi!</h3>
-				<p>My name is Henry Steinberg and I am a driven and dedicated young creative professional living in Philadelphia. I am passionate about good people, good paper <italic>and</italic> good design.</p>
+				<p>Hi! My name is Henry Steinberg and I am a driven and dedicated young creative professional living in Philadelphia. I am a front-end web developer and letterpress printer and I'm passionate about good people, good paper and good design.</p>
 			</div>
 			<div class="resume" id="edu">
 				<h3>Education</h3>

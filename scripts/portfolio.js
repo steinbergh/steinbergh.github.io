@@ -14,7 +14,6 @@ $(document).ready(function(){
       }
     });
   });
-
 //   $('#thumb img').click(function(){
 //       console.log("this is working");
 //       $('#large').attr('src',$(this).attr('src').replace('thumb','large'));
