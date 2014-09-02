@@ -2,15 +2,15 @@
 <header>
 	<h1>Web Development</h1>
 	<nav class="main-nav">
-    <a href="./press.php" class="print"><span>web</span></a>
+    <a href="./press.php" class="print"><span>print</span></a>
     <a href="./about.php" class="About"><span>about</span></a>
     <a href="./index.php" class="home"><span>home</span></a>
 	</nav>
 </header>
 
 <div>
-<!-- 	<h3>This summer I was lucky enough to be a part of the innaugural class of Zivtech's Philly Dev Camp. The projects below (and even this website!) demonstrate the skills I learned thanks to their wonderful program and are in a rough chronological order.</h3><br />
-	<div class="project">
+<h3>This summer I was lucky enough to be a part of the innaugural class of Zivtech's Philly Dev Camp. The projects below (and even this website!) demonstrate the skills I learned thanks to their wonderful program and are in a rough chronological order.</h3><br />
+<!-- 		<div class="project">
 		<h4>Introduction to PHP</h4>
 		<a href="http://henry.edna.com/population.php?city=Philadelphia">Population Data</a><br />
 		<p>This project is a basic PHP program designed to use PHP to get and display population data from a predefined database.</p><br />
@@ -22,11 +22,11 @@
 		<p>"The Hot List!" is a blog that prints articles it gets from the database using a PHP MySQL interface.</p><br />
 	</div> -->
 
-<!-- 	<div class="project">
+	<div class="project">
 		<h4>HTML, CSS, Sass and jQuery</h4>
-		<a href="/projects/bullfrog/index.html">Bullfrog</a><br />
-		<p>An HTML page mock up written using the Sass CSS preprocessor and jQuery. Designed from a wireframe.</p><br />
-	</div> -->
+		<a href="https://github.com/steinbergh/bullfrog">Bullfrog (view on GitHub)</a><br />
+		<p>An HTML page mock up written using the SASS CSS preprocessor and jQuery. Designed from a wireframe.</p><br />
+	</div>
 
 	<div class="project">
 		<h4>Drupal Site Building</h4>
@@ -34,11 +34,11 @@
 		<p>This is a mock up for a potential portfolio site using druapl and themed with Bootstrap. In it I have written and enabled a module that finds and dispalays a count of the number of projects, badges and blog posts the user has uploaded to the site.</p><br />
 	</div>
 
-<!-- 	<div class="project">
+	<div class="project">
 		<h4>Angular.js App</h4>
-		<a href="/projects/todo-ng/app/main/main.html">ToDo List</a><br />
+		<a href="https://github.com/steinbergh/angularToDoList">ToDo List (view on GitHub)</a><br />
 		<p>This is app is a todo list that should allow the user to create and remove items from a list. It is styled using the Bootstrap front-end framework.</p><br />
-	</div> -->
+	</div>
 
 	<div class="project">
 		<h4>Ruby On Rails App</h4>

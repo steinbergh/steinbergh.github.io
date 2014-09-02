@@ -64,13 +64,13 @@
  */
 html {
 	font-size:100%;
-	height: 101%;
-	width: 100%;
+  position: relative;
+  min-height: 100%;
 }
 
 body {
-	height: 100%;
-	width: 100%;
+  width: 100%;
+  margin: 0 0 120px;
 }
 
 #page {
@@ -123,7 +123,7 @@ nav {
 	}
 }
 
-.wrapper {
+.folio-grid {
 	position: relative;
 	height: 100%;
 	width: 100%;
@@ -135,9 +135,6 @@ nav {
 .full-width {
   @include span(1/2);
   height: 500px;
-  // height: 70%;
-  // width: 50%;
-  float: left;
   overflow: hidden;
   position: relative;
   @include breakpoint($breakpoint-small-width){
@@ -149,8 +146,6 @@ nav {
 .half-width {
 	@include span(1/4);
 	height: 500px;
-	// height: 70%;
-	// width: 25%;
 	float: left;
 	overflow: hidden;
 	position: relative;
@@ -163,8 +158,6 @@ nav {
 .quarter-width {
 	@include span(1/4);
 	height: 250px;
-	// height: 35%;
-	// width: 25%;
 	overflow: hidden;
 	position: relative;
 		@include breakpoint($breakpoint-small-width){
@@ -351,7 +344,11 @@ h3 {
 *footer styles
 */
 footer {
-	padding: 20px 0;
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	bottom: 0;
+	left: 0;
 	font-family: klinic;
 	text-align: center;
 	clear: both;

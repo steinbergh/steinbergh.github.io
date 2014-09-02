@@ -146,13 +146,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  */
 html {
   font-size: 100%;
-  height: 101%;
-  width: 100%;
+  position: relative;
+  min-height: 100%;
 }
 
 body {
-  height: 100%;
   width: 100%;
+  margin: 0 0 120px;
 }
 
 #page {
@@ -240,7 +240,7 @@ nav {
   }
 }
 
-.wrapper {
+.folio-grid {
   position: relative;
   height: 100%;
   width: 100%;
@@ -260,7 +260,6 @@ nav {
   margin-left: 0%;
   margin-right: 0%;
   height: 500px;
-  float: left;
   overflow: hidden;
   position: relative;
 }
@@ -643,7 +642,11 @@ h3 {
 *footer styles
 */
 footer {
-  padding: 20px 0;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  left: 0;
   font-family: klinic;
   text-align: center;
   clear: both;
