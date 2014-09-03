@@ -1,5 +1,11 @@
 $(document).ready(function(){ 
+  
+  //Causes the images in the gallery to lazy load
+  $(function() {
+    $("img.lazy").lazyload();
+  });
 
+  //the code below adds velocity based animations to the website
   $('.home-print, .home-web, .home-about').click(function(){
       var url = $(this).attr('href');
       $('.full-width, .half-width, .quarter-width, footer').css("transition", " ");
@@ -20,9 +26,3 @@ $(document).ready(function(){
       return false;
   });
 });
-
-//   $('#thumb img').click(function(){
-//       console.log("this is working");
-//       $('#large').attr('src',$(this).attr('src').replace('thumb','large'));
-//   });
-// });

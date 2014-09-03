@@ -232,6 +232,12 @@ transition: opacity 0.15s linear;
 	}
 }
 
+#nav-wrapper {
+	@include breakpoint($breakpoint-medium-width){
+		@include center(50%);
+		padding: 0 auto;
+	}
+}
 
 #resume-nav {
 	@iclude box-sizing(border-box);
@@ -246,20 +252,17 @@ transition: opacity 0.15s linear;
 		width: 185px;
 		height: 185px;
 	}
-	@include breakpoint($breakpoint-small-width){
+	@include breakpoint($breakpoint-medium-width){
 		position:relative;
-		text-align: center;
 		ul {
 			clear: both;
 			li{
-				margin: 0 auto;
 				padding: 24px 5px;
 				font-weight: bold;
-				float: right;
+				float: left;
 			}
 		}
 		img {
-			margin: 0 auto;
 		}
 	}
 }
@@ -317,10 +320,14 @@ transition: opacity 0.15s linear;
 		}
 	}
 }
-
-h3 {
-	font-size: 32px;
-	font-family: Klinic;
+#gallery-page {
+	h3 {
+		font-size: 32px;
+		font-family: Klinic;
+		@include breakpoint($breakpoint-small-width){
+			margin-left: 20px;
+		}
+	}
 }
 
 .project {
@@ -357,7 +364,6 @@ footer {
 		padding: 0 10px;
 	}
 	@include breakpoint($breakpoint-small-width){
-		padding: 60px;
 		.social {
 			padding: 0;
 		} 

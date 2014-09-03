@@ -10,6 +10,7 @@
   <script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
   <script type="text/javascript" src="scripts/velocity.min.js"></script>
   <script type="text/javascript" src="scripts/velocity.ui.min.js"></script>
+  <script type="text/javascript" src="scripts/jquery.lazyload.min.js"></script>
   <script type="text/javascript" src="scripts/portfolio.js"></script>
 </head>
 
