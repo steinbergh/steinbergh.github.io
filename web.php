@@ -29,7 +29,7 @@
 
 	<div class="project">
 		<h4>Drupal Site Building</h4>
-		<a href="../portfolio/">Portfolio Template</a><br />
+		<a href="http://drupal.henrysteinberg.com/">Portfolio Template</a><br />
 		<p>This is a mock up for a potential portfolio site using druapl and themed with Bootstrap. In it I have written and enabled a module that finds and displays a count of the number of projects, badges and blog posts the user has uploaded to the site.</p><br />
 	</div>
 
@@ -42,7 +42,7 @@
 	<div class="project">
 		<h4>Ruby On Rails App</h4>
 		<a href="https://agile-ravine-2350.herokuapp.com">Basic Web App</a><br />
-		<p>This is a basic web app created using Rails. It should demonstarte basic functionality ans usibility such as allowing a user to log on and off and create a profile.</p><br />
+		<p>This is a basic web app created using Rails. It should demonstrate basic functionality and usability such as allowing a user to log on and off and create a profile.</p><br />
 	</div>
 
 	<div class="project">
