@@ -9,8 +9,8 @@
 </header>
 
 <div>
-<h3>This summer I was lucky enough to be a part of the innaugural class of Zivtech's Philly Dev Camp. The projects below (and even this website!) demonstrate the skills I learned thanks to their wonderful program and are in a rough chronological order.</h3><br />
-<!-- 		<div class="project">
+<!-- <h3>This summer I was lucky enough to be a part of the innaugural class of Zivtech's Philly Dev Camp. The projects below (and even this website!) demonstrate the skills I learned thanks to their wonderful program and are in a rough chronological order.</h3><br />
+ --><!-- 		<div class="project">
 		<h4>Introduction to PHP</h4>
 		<a href="http://henry.edna.com/population.php?city=Philadelphia">Population Data</a><br />
 		<p>This project is a basic PHP program designed to use PHP to get and display population data from a predefined database.</p><br />
