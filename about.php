@@ -9,15 +9,6 @@
 					<li><a href="./press.php" class="resume-print"><span>print</span></a></li>
 	        <li><a href="./web.php" class="resume-web"><span>web</span></a></li>
 	        <li><a href="./index.php" class="resume-home">home</a></li> 
-			<!--<a href="#about-me"><li>About Me</li></a>
-					<a href="#edu"><li>Education</li></a>
-					<a href="#exp"><li>Experience</li></a>
-					<a href="#pub"><li>Publications</li></a>
-					<a href="#exhib"><li>Exhibitions</li></a>
-					<a href="#fellows"><li>Fellowships</li></a>
-					<a href="#workshops"><li>Workshops</li></a>
-					<a href="#member"><li>Memberships</li></a>
-					<a href="#skills"><li>Skills</li></a>-->
 				</ul>
 			</div>
 		</div>
@@ -25,7 +16,7 @@
 		<div id="resume-alpha">
 			<div class="resume" id="about-me">
 				<h3>Hi!</h3>
-				<p>My name is Henry Steinberg and I am a young creative professional living in Philadelphia. I am a front-end web developer and letterpress printer and I'm passionate about good people, good paper and good design.</p>
+				<p>My name is Henry Steinberg and I am a young creative professional living in Philadelphia. I am a front-end web developer and letterpress printer. I'm passionate about good people, good paper and good design.</p>
 			</div>
 			<div class="resume" id="edu">
 				<h3>Education</h3>

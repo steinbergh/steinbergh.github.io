@@ -9,8 +9,7 @@
 </header>
 
 <div>
-<!-- <h3>This summer I was lucky enough to be a part of the innaugural class of Zivtech's Philly Dev Camp. The projects below (and even this website!) demonstrate the skills I learned thanks to their wonderful program and are in a rough chronological order.</h3><br />
- --><!-- 		<div class="project">
+<!-- 		<div class="project">
 		<h4>Introduction to PHP</h4>
 		<a href="http://henry.edna.com/population.php?city=Philadelphia">Population Data</a><br />
 		<p>This project is a basic PHP program designed to use PHP to get and display population data from a predefined database.</p><br />
@@ -30,8 +29,8 @@
 
 	<div class="project">
 		<h4>Drupal Site Building</h4>
-		<a href="http://henrysteinberg.com/portfolio/">Portfolio Template</a><br />
-		<p>This is a mock up for a potential portfolio site using druapl and themed with Bootstrap. In it I have written and enabled a module that finds and dispalays a count of the number of projects, badges and blog posts the user has uploaded to the site.</p><br />
+		<a href="../portfolio/">Portfolio Template</a><br />
+		<p>This is a mock up for a potential portfolio site using druapl and themed with Bootstrap. In it I have written and enabled a module that finds and displays a count of the number of projects, badges and blog posts the user has uploaded to the site.</p><br />
 	</div>
 
 	<div class="project">
