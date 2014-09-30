@@ -20,7 +20,6 @@
 		<a href="http://henry.edna.com/blog_repo/index.php">Hot List!</a><br />
 		<p>"The Hot List!" is a blog that prints articles it gets from the database using a PHP MySQL interface.</p><br />
 	</div> -->
-
 	<div class="project">
 		<h4>HTML, CSS, Sass and jQuery</h4>
 		<a href="https://github.com/steinbergh/bullfrog">Bullfrog (view on GitHub)</a><br />
@@ -51,8 +50,5 @@
 		<a href="http://ussfphilly.org">Live site (still WIP)</a><br />
 		<p>The capstone of our time at Dev Camp was the chance to work on a real website for a non-profit. The group I chose is the United States Social Forum which will be hosting one of its events here in Philadephia in 2015. They are a great orginization and were a pleasure to work. This is dummy created to show the representative from United States Social Fourm to get a sense of what he wanted the finished website to look like. This excecise was helpful because it allowed me to visualize what the styles would look like for the finished site. Ultimately we went in a different direction for the theme but you can still see traces of these original mockups in the finished design. For the development of the live site I took the role of front-end developer and am responsible for the theme and general design of the site.</p>
 	</div>
-
-
-
 </div>
 <?php include('includes/footer.php');?>

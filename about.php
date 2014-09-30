@@ -1,5 +1,5 @@
-<?php include ('includes/header.php'); ?> 
-	
+<?php include ('includes/header.php'); ?>
+
 <div id="about-page">
 
 		<div id="nav-wrapper">
@@ -8,7 +8,7 @@
 				<ul>
 					<li><a href="./press.php" class="resume-print"><span>print</span></a></li>
 	        <li><a href="./web.php" class="resume-web"><span>web</span></a></li>
-	        <li><a href="./index.php" class="resume-home">home</a></li> 
+	        <li><a href="./index.php" class="resume-home">home</a></li>
 				</ul>
 			</div>
 		</div>
@@ -54,7 +54,7 @@
 				<span class="bold-italic">Handmade/Homemade</span> Brodsky Gallery | University of Pennsylvania | 2012<br />
 			</div>
 
-			<div class="resume" id"fellows">
+			<div class="resume" id="fellows">
 				<h3>Fellowship and Prizes</h3>
 				<span class="bold">Junior Fellow’s Prize</span> Kelly Writers House | 2013-2014<br />
 				<span class="bold">CURF Summer Internship</span> Kelly Writers House | 2011<br />
@@ -85,9 +85,5 @@
 			</div>
 
 		</div>
-	</div>	
+	</div>
 <?php include ('includes/footer.php'); ?>
-
-
-
-
