@@ -69,13 +69,13 @@ html {
 }
 
 body {
-  width: 100%;
   margin: 0 0 120px;
 }
 
 #page {
-	@include center(75%);
   max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
 	@include breakpoint($breakpoint-small-width){
  		@include center(90%);
  }
@@ -223,38 +223,47 @@ transition: opacity 0.15s linear;
 /**
 *Resume Styles
 */
-
+#about-page{
+  margin: 0 250px;
+  max-width: 1000px;
+  @include breakpoint($breakpoint-medium-width){
+    @include center(90%);
+  }
+}
 
 #resume-alpha {
-	margin-left: 50px;
+  position: relative;
+  @include box-sizing(border-box);
 		@include breakpoint($breakpoint-small-width){
 			clear: both;
-			margin-left: 20px;
 	}
 }
 
 #nav-wrapper {
+  @include box-sizing(border-box);
+  float: left;
 	@include breakpoint($breakpoint-medium-width){
 		@include center(50%);
-		padding: 0 auto;
+    padding-left: auto;
 	}
 }
 
 #resume-nav {
-	@iclude box-sizing(border-box);
-	position: fixed;
+  position: fixed;
+  height: 100%;
 	left: 20px;
 	font-size: 24px;
 	font-family: klinic;
 	text-align: center;
 	float: left;
 	img {
-		border-radius: 999px;
+		border-radius: 100%;
 		width: 185px;
 		height: 185px;
 	}
 	@include breakpoint($breakpoint-medium-width){
-		position:relative;
+		position: static;
+    margin: 0 auto;
 		ul {
 			clear: both;
 			li{
@@ -264,12 +273,13 @@ transition: opacity 0.15s linear;
 			}
 		}
 		img {
+      padding-top: 20px;
 		}
 	}
 }
 
 .resume {
-	@iclude box-sizing(border-box);
+	@include box-sizing(border-box);
 	font-family: Klinic;
 	font-size: 24px;
 	margin: 24px 0;
