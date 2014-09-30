@@ -1,4 +1,6 @@
-<?php include ('includes/header.php'); ?> 
+<?php require ('includes/header.php'); ?>
+  <div id="page">
+
     <header>
       <h1><a href="index.php">HENRY STEINBERG</a></h1>
        <!--Start Main Nav-->
@@ -18,4 +20,5 @@
       <a href="mailto:henryjosephsteinberg@gmail.com" target="blank"><div class="quarter-width" id="K"><span id="at-symbol">@</span></div></a>
     </div>
     <!--END Main Content-->
+  </div>
 <?php include ('includes/footer.php'); ?>
