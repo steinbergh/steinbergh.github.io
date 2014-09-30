@@ -75,8 +75,9 @@ body {
 
 #page {
 	@include center(75%);
-		@include breakpoint($breakpoint-small-width){
- 		@include center(90%);	
+  max-width: 1000px;
+	@include breakpoint($breakpoint-small-width){
+ 		@include center(90%);
  }
 }
 
@@ -366,8 +367,6 @@ footer {
 	@include breakpoint($breakpoint-small-width){
 		.social {
 			padding: 0;
-		} 
+		}
 	}
 }
-
-
