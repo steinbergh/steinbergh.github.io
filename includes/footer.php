@@ -1,5 +1,4 @@
-		<div>
-		</div>
+
 		<footer>
 			<a href="mailto:henryjosephsteinberg@gmail.com" target="blank"><i class="fi-mail social"></i></a>
 			<a href="https://twitter.com/swarshbucklin" target="blank"><i class="fi-social-twitter social"></i></a>
